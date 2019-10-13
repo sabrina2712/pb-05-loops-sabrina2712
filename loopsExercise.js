@@ -1,27 +1,51 @@
 //Prob 1
+let sum = 0;
+
 for (let index = 0; index < 20; index++) {
-  const numbersAdd = index + 1;
-  console.log(numbersAdd);
+  const numberToAdd = index + 1;
+
+  sum = sum + numberToAdd;
 }
+console.log(sum);
 
 // prob.2
 
 var i = 15;
 for (let index = 1; index <= i; index++) {
-  console.log(" there are " + index + " of beer on the wall");
-}
+  let bottleOrBottles = "bottle";
+  let isOrAre = "is";
 
+  if (index > 1) {
+    isOrAre = "are";
+  }
+
+  if (index > 1) {
+    bottleOrBottles = "bottles";
+  }
+
+  console.log(
+    " There" +
+      " " +
+      isOrAre +
+      " " +
+      index +
+      " " +
+      bottleOrBottles +
+      " of beer on the wall"
+  );
+}
 // prob. 3
 
 for (let index = 0; index < 20; index++) {
-  if (index % 2 == 0) console.log(index + "even");
-  else console.log(index + 1 + "odd");
+  if (index % 2 == 0) console.log(index + " is even");
+  else console.log(index + 1 + " is odd");
 }
 
 // prob.4
+
 for (let index = 0; index < 10; index++) {
-  const multiplicationTable = (index + 1) * 9;
-  console.log(multiplicationTable);
+  let result = (index + 1) * 9;
+  console.log(index + 1 + " * 9 = " + result);
 }
 
 // Prob 5
@@ -48,7 +72,7 @@ for (let index = 0; index < grade.length; index++) {
 
 // Prob 6
 
-for (let index = 0; index < 10; index++) {
+for (let index = 0; index < 100; index++) {
   let toPrint = "";
 
   if (index % 3 == 0) {
@@ -111,3 +135,17 @@ for (let index = 10; index >= 0; index--) {
 }
 
 console.log([firstArray] + [secondArray] + [thirdArray] + [fourthArray]);
+/*
+
+// prob. 11
+var isPalindrome = "madam";
+
+
+
+for (let index = isPalindrome.length; index < 0; index--) {
+  
+if (isPalindrome )
+
+
+
+*/
